@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="types.fs" />
+    <Compile Include="player.fs" />
+    <Compile Include="target.fs" />
+    <Compile Include="enemy.fs" />
+    <Compile Include="checkCollision.fs" />
+    <Compile Include="gameloop.fs" />
+    <Compile Include="pause.fs" />
+    <Compile Include="loosescreen.fs" />
+    <Compile Include="mainmenu.fs" />
+    <Compile Include="scenemanager.fs" />
+    <Compile Include="window.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Raylib-cs" Version="5.0.0" />
+  </ItemGroup>
+
+</Project>
