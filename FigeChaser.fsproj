@@ -7,18 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="types.fs" />
-    <Compile Include="player.fs" />
-    <Compile Include="target.fs" />
-    <Compile Include="enemy.fs" />
-    <Compile Include="checkCollision.fs" />
-    <Compile Include="gameloop.fs" />
-    <Compile Include="pause.fs" />
-    <Compile Include="loosescreen.fs" />
-    <Compile Include="mainmenu.fs" />
-    <Compile Include="scenemanager.fs" />
-    <Compile Include="window.fs" />
-    <Compile Include="Program.fs" />
+    <Compile Include="source\types.fs" />
+    <Compile Include="source\mainmenu.fs" />
+    <Compile Include="source\player.fs" />
+    <Compile Include="source\target.fs" />
+    <Compile Include="source\enemy.fs" />
+    <Compile Include="source\checkCollision.fs" />
+    <Compile Include="source\gameloop.fs" />
+    <Compile Include="source\pause.fs" />
+    <Compile Include="source\loosescreen.fs" />
+    <Compile Include="source\scenemanager.fs" />
+    <Compile Include="source\window.fs" />
+    <Compile Include="source\Program.fs" />
   </ItemGroup>
 
   <ItemGroup>

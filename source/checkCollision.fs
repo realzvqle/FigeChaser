@@ -15,8 +15,8 @@ let checkDistance (first: transform) (second: transform) : float32 =
 
 let checkCollision(first: transform) (second: transform) (third: transform) (gameState: gameState) =
     if checkDistance first third < 35f then
-        gameState.target.position.x <- float32(Raylib.GetRandomValue(-7, 1577))
-        gameState.target.position.y <- float32(Raylib.GetRandomValue(-7, 868))
+        gameState.target.position.x <- float32(Raylib.GetRandomValue(0, Raylib.GetScreenWidth()))
+        gameState.target.position.y <- float32(Raylib.GetRandomValue(0, Raylib.GetScreenHeight()))
         gameState.counter <- gameState.counter + 1
     if checkDistance first second < 35f then
         gameState.sceneManager <- 2

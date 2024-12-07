@@ -29,7 +29,7 @@ let gameLoop (gameState: gameState) =
         
         
        
-    Raylib.DrawText(string gameState.counter, 1600 / 2, 10, 40, Color.PINK);
+    Raylib.DrawText(string gameState.counter, (Raylib.GetScreenWidth()) / 2, 10, 40, Color.PINK);
    
         
     

@@ -5,8 +5,8 @@ open Raylib_cs
 
 let enemySetup (enemy: enemy) =
     enemy.color <- Color.RED
-    enemy.position.x <- 1600.0f / 3.0f
-    enemy.position.y <- 900.0f / 3.0f
+    enemy.position.x <- float32 (Raylib.GetScreenWidth()) / 3.0f
+    enemy.position.y <- float32 (Raylib.GetScreenHeight()) / 3.0f
     enemy.size.x <- 30f
     enemy.size.y <- 30f
 

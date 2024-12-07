@@ -9,8 +9,8 @@ open Raylib_cs
 
 let playerSetup (player: player) =
     player.color <- Color.BLUE
-    player.position.x <- 1600.0f / 2.0f
-    player.position.y <- 900.0f / 2.0f
+    player.position.x <- float32 (Raylib.GetScreenWidth()) / 2.0f
+    player.position.y <- float32 (Raylib.GetScreenHeight()) / 2.0f
     player.size.x <- 30f
     player.size.y <- 30f
     //player.rect = Rectangle(player.position.x, player.position.y, player.size.x, player.size.y)
@@ -40,13 +40,13 @@ let playerControl (player: player) =
 
 
 let checkPlayerBorder(player: player) =
-    if player.position.x <= float32 -7 then
-        player.position.x <- float32 -7
-    if player.position.x >= float32 1577 then
-        player.position.x <- float32 1577
-    if player.position.y <= float32 -7 then
-        player.position.y <- float32 -7
-    if player.position.y >= float32 868 then
-        player.position.y <- float32 868
+    if player.position.x <= float32 0 then
+        player.position.x <- float32 0
+    if player.position.x >= float32 (Raylib.GetScreenWidth()) then
+        player.position.x <- float32 (Raylib.GetScreenWidth())
+    if player.position.y <= float32 0 then
+        player.position.y <- float32 0
+    if player.position.y >= float32 (Raylib.GetScreenHeight()) then
+        player.position.y <- float32 (Raylib.GetScreenHeight())
 
 
